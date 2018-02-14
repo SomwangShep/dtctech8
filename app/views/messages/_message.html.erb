@@ -1,0 +1,11 @@
+
+<div class="message">
+  <p>
+    <small><em><%= time_ago_in_words(message.created_at) %> ago</em></small>
+    <!--<strong><#%= message.chef.chefname.capitalize %>:</strong>-->
+    <strong><%= message.chef.chefname %>:</strong>
+    <span class="content">
+      <%= message.content %>
+    </span>
+  </p>
+</div>
